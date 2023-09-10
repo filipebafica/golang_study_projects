@@ -1,0 +1,11 @@
+version: '3.14'
+services:
+  app:
+    container_name: golang_study_projects_1_webserver
+    image: golang_study_projects_1_webserver
+    build:
+      dockerfile: docker/app/Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "8080:8081"
